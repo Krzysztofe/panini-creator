@@ -1,0 +1,15 @@
+@import "../../../css/settings/_variables.css";
+
+.headerContainer {
+  width: inherit;
+  height: 211px;
+  border: 0.5px solid black;
+  z-index: -1;
+}
+
+.header {
+  font-size: var(--fs-600);
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
