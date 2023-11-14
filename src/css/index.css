@@ -1,0 +1,9 @@
+@import "generic/_reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+
+@import "settings/_variables";
+@import "settings/_base";
+
+
