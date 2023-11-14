@@ -1,12 +1,13 @@
 import React from "react";
 import ContextProv from "./context/ContextProv";
-import "./App.css";
 import IndexBegin from "./pages/begin/indexBegin/IndexBegin";
+import LoadingPage from "./pages/loadingPage/LoadingPage";
 
 function App() {
   return (
     <ContextProv>
-      <IndexBegin />
+      {/* <IndexBegin /> */}
+      <LoadingPage />
     </ContextProv>
   );
 }

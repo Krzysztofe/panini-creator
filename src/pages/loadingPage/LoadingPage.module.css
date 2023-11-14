@@ -1,0 +1,21 @@
+.main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.spinner{
+    width: 75px;
+    height: 75px;
+    border: 1vw solid rgb(242,242,242) ;
+    border-bottom: 1vw solid var(--clr-primary);
+    border-radius: 50%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    0%{}
+    100%{
+        transform: rotate(360deg);
+    }
+}
