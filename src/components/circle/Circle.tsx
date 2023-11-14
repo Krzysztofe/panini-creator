@@ -1,14 +1,22 @@
 import { ReactNode, useContext } from "react";
 import { Context } from "../../context/ContextProv";
 
+type KeyFrames = {
+  name: string;
+  translateTo: string;
+  scaleTo: string;
+};
+
 type Props = {
   children?: ReactNode;
   width: string;
   translate: string;
-  keyFrames: { name: string; transformTo: string; scaleTo: string };
+  keyFrames: KeyFrames;
 };
 
-const css = (width: string, translate: string, name: any) => {
+
+
+const css = (width: string, translate: string, name:KeyFrames) => {
   return {
     width,
     height: width,
@@ -25,7 +33,7 @@ const css = (width: string, translate: string, name: any) => {
   };
 };
 
-const generateKeyframes = (data: any) => {
+const generateKeyframes = (data: KeyFrames) => {
   const { name, translateTo, scaleTo } = data;
   return `
     @keyframes ${name} {

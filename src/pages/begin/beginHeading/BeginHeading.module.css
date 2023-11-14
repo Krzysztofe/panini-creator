@@ -1,26 +1,25 @@
 .headerWrapper {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .header {
-    margin-bottom: 0;
-    font-size: var(--fs-primary-heading);
+  font-size: var(  --fs-primary-heading);
+  margin-bottom: 0;
 }
 
 .button {
-    margin-inline: auto;
-    padding-inline: 20px;
-    padding-block: 14px;
-    display: block;
-    transition: 0.5s;
-    background-color: var(--clr-transparent);
-    border: 0.5px solid var(--clr-transparent);
-    font-size: 8px;
+  display: block;
+  margin-inline: auto;
+  padding-inline: 20px;
+  padding-block: 14px;
+  background-color: var(--clr-transparent);
+  border: 0.5px solid var(--clr-transparent);
+  transition: 0.5s;
 }
 .button:hover {
-    border: 0.5px solid var(--clr-primary);
+  border: 0.5px solid var(--clr-primary);
 }

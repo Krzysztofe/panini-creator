@@ -4,7 +4,7 @@ import BeginHeading from "../beginHeading/BeginHeading";
 import BeginHeadingContainer from "../beginHeadingContainer/BeginHeadingContainer";
 import styles from "./IndexBegin.module.css";
 import { Context } from "../../../context/ContextProv";
-import { dataCircles } from "../../../components/circle/dataCircles";
+import { dataCircles } from "./dataCircles";
 
 const css = (isBegin: boolean) => {
   return {
