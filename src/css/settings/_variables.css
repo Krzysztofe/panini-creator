@@ -1,5 +1,7 @@
 :root {
-  --clr-primary-400: rgba(0, 0, 0, 1);
+  --clr-primary: rgba(0, 0, 0, 1);
+  --clr-white: rgba(255, 255, 255, 1);
+  --clr-transparent: rgba(255, 255, 255, 0);
 
   --ff-primary: "Instrument Serif", serif;
   --ff-secondary: "Oxygen Mono", monospace;
@@ -11,6 +13,7 @@
   --fs-300: 0.75rem;
   --fs-400: 1.125rem;
   --fs-500: 1.625rem;
+  --fs-550: 2rem;
   --fs-600: 2.875rem;
 
   /* --fs-body: var(--fs-400);
@@ -28,12 +31,13 @@
   --size-700: 3rem;
   --size-800: 4rem;
   --size-900: 46px; */
+    --fs-primary-heading: var(--fs-500);
 }
 
 @media (min-width: 50rem) {
   :root {
     --fs-primary: var(--fs-300);
-    --fs-primary-heading: var(--fs-900);
+    --fs-primary-heading: var(--fs-550);
     --fs-secondary-heading: var(--fs-800);
     --fs-nav: var(--fs-300);
   }

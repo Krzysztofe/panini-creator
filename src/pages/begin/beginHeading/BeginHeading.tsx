@@ -1,20 +1,18 @@
-import React, { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../../../context/ContextProv";
 import styles from "./BeginHeading.module.css";
 
 const BeginHeading = () => {
-  const [isBegin, setBegin] = useState(false);
+  const { setBegin } = useContext(Context);
 
   const handleBegin = () => {
     setBegin(true);
   };
 
   return (
-    <div className={styles.headerContainer}>
+    <div className={styles.headerWrapper}>
       <h1 className={styles.header}>Panini Creator</h1>
-      <button
-        style={{ paddingInline: "20px", paddingBlock: "14px" }}
-        onClick={handleBegin}
-      >
+      <button onClick={handleBegin} className={styles.button}>
         BEGIN
       </button>
     </div>

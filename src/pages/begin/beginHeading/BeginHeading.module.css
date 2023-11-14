@@ -1,15 +1,25 @@
-@import "../../../css/settings/_variables.css";
-
-.headerContainer {
-  width: inherit;
-  height: 211px;
-  border: 0.5px solid black;
-  z-index: -1;
+.headerWrapper {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header {
-  font-size: var(--fs-600);
-  font-weight: 400;
-  margin-top: 50px;
-  margin-bottom: 0;
+    margin-bottom: 0;
+    font-size: var(--fs-primary-heading);
+}
+
+.button {
+    margin-inline: auto;
+    padding-inline: 20px;
+    padding-block: 14px;
+    display: block;
+    transition: 0.5s;
+    background-color: var(--clr-transparent);
+    border: 0.5px solid var(--clr-transparent);
+}
+.button:hover {
+    border: 0.5px solid var(--clr-primary);
 }

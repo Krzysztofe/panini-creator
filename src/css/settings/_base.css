@@ -4,12 +4,14 @@ body {
   font-size: var(--fs-300);
   font-family: var(--ff-primary);
   color: var(--clr-primary);
-
-  font-synthesis: none;
+  min-width: 100vw;
+  min-height: 100vh;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
+
 }
 
 .wrapper {
@@ -18,10 +20,10 @@ body {
   margin: 0 auto;
 }
 
-.wrapper--form{
-    padding: 80px;
-    margin-bottom: 20px;
-    border: 1px solid var(--clr-primary);
+.wrapper--form {
+  padding: 80px;
+  margin-bottom: 20px;
+  border: 1px solid var(--clr-primary);
 }
 
 input,
@@ -34,5 +36,4 @@ button {
 button {
   border: 0;
   font-family: var(--ff-secondary);
-
 }
