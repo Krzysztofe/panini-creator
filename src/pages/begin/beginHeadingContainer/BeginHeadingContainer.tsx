@@ -5,7 +5,7 @@ import "../../../css/settings/_variables.css";
 const css = (isBegin: boolean) => {
   return {
     width: "100%",
-    height: "211px",
+    height: "140px",
     display: "grid",
     placeItems: "center",
     border: isBegin

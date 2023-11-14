@@ -1,7 +1,7 @@
 export const dataCircles = [
   {
-    width: "632px",
-    translate: "translate(-50%, -11%)",
+    width: "440px",
+    translate: "translate(-50%, -13%)",
     keyFrames: {
       name: "vertical-top",
       translateTo: "-50%, -111%",
@@ -9,7 +9,7 @@ export const dataCircles = [
     },
   },
   {
-    width: "632px",
+    width: "440px",
     translate: "translate(-50%, 111%)",
     keyFrames: {
       name: "vertical-bottom",
@@ -19,8 +19,8 @@ export const dataCircles = [
   },
 
   {
-    width: "1091px",
-    translate: "translate(-130%, 50%)",
+    width: "762px",
+    translate: "translate(-129%, 50%)",
     keyFrames: {
       name: "horizontal-1",
       translateTo: "-230%, 50%",
@@ -28,7 +28,7 @@ export const dataCircles = [
     },
   },
   {
-    width: "1091px",
+    width: "762px",
     translate: "translate(-79%, 50%)",
     keyFrames: {
       name: "horizontal-2",
@@ -37,7 +37,7 @@ export const dataCircles = [
     },
   },
   {
-    width: "1091px",
+    width: "762px",
     translate: "translate(-50%, 50%)",
     keyFrames: {
       name: "center",
@@ -46,7 +46,7 @@ export const dataCircles = [
     },
   },
   {
-    width: "1091px",
+    width: "762px",
     translate: "translate(-21%, 50%)",
     keyFrames: {
       name: "horizontal-3",
@@ -55,8 +55,8 @@ export const dataCircles = [
     },
   },
   {
-    width: "1091px",
-    translate: "translate(30%, 50%)",
+    width: "762px",
+    translate: "translate(29%, 50%)",
     keyFrames: {
       name: "horizontal-4",
       translateTo: "230%, 50%",
