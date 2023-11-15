@@ -1,6 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../../../context/ContextProv";
-import "../../../css/settings/_variables.css";
+import { Context } from "../../context/ContextProv";
 
 const css = (isBegin: boolean) => {
   return {

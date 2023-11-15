@@ -1,14 +1,22 @@
-import React from "react";
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContextProv from "./context/ContextProv";
-import IndexBegin from "./pages/begin/indexBegin/IndexBegin";
-import LoadingPage from "./pages/loadingPage/LoadingPage";
+const LoadingPage = lazy(() => import("./pages/loadingPage/LoadingPage"));
+const IndexBegin = lazy(() => import("./pages/begin/indexBegin/IndexBegin"));
+const IndexForm = lazy(() => import("./pages/form/indexForm/IndexForm"));
 
 function App() {
   return (
-    <ContextProv>
-      {/* <IndexBegin /> */}
-      <LoadingPage />
-    </ContextProv>
+    <BrowserRouter>
+      <Suspense fallback={<LoadingPage />}>
+        <ContextProv>
+          <Routes>
+            <Route path="/" element={<IndexBegin />} />
+            <Route path="/form" element={<IndexForm />} />
+          </Routes>
+        </ContextProv>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import Circle from "../../../components/circle/Circle";
+import BeginCircle from "../BeginCircle";
 import BeginHeading from "../beginHeading/BeginHeading";
-import BeginHeadingContainer from "../beginHeadingContainer/BeginHeadingContainer";
+import BeginHeadingContainer from "../BeginHeadingContainer";
 import styles from "./IndexBegin.module.css";
 import { Context } from "../../../context/ContextProv";
 import { dataCircles } from "./dataCircles";
+import IndexForm from "../../form/indexForm/IndexForm";
 
 const css = (isBegin: boolean) => {
   return {
@@ -20,21 +21,23 @@ const IndexBegin = () => {
   const { isBegin } = useContext(Context);
 
   return (
-    <main style={css(isBegin)}>
-      <BeginHeading />
-
-      {dataCircles.map(({ width, translate, keyFrames }, idx) => {
-        return (
-          <Circle
-            key={keyFrames.name}
-            width={width}
-            translate={translate}
-            keyFrames={keyFrames}
-          >
-            {keyFrames.name === "center" ? <BeginHeadingContainer /> : <></>}
-          </Circle>
-        );
-      })}
+    <main>
+      {/* <IndexForm /> */}
+      <div style={css(isBegin)}>
+        <BeginHeading />
+        {dataCircles.map(({ width, translate, keyFrames }, idx) => {
+          return (
+            <BeginCircle
+              key={keyFrames.name}
+              width={width}
+              translate={translate}
+              keyFrames={keyFrames}
+            >
+              {keyFrames.name === "center" ? <BeginHeadingContainer /> : <></>}
+            </BeginCircle>
+          );
+        })}
+      </div>
     </main>
   );
 };

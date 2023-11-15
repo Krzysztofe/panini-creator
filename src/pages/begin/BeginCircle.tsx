@@ -14,9 +14,7 @@ type Props = {
   keyFrames: KeyFrames;
 };
 
-
-
-const css = (width: string, translate: string, name:KeyFrames) => {
+const css = (width: string, translate: string, name: KeyFrames) => {
   return {
     width,
     height: width,
@@ -45,7 +43,7 @@ const generateKeyframes = (data: KeyFrames) => {
   `;
 };
 
-const Circle = (props: Props) => {
+const BeginCircle = (props: Props) => {
   const { isBegin } = useContext(Context);
   const keyframes = generateKeyframes(props.keyFrames);
 
@@ -59,4 +57,4 @@ const Circle = (props: Props) => {
   );
 };
 
-export default Circle;
+export default BeginCircle;
