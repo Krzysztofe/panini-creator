@@ -1,11 +1,18 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 @keyframes opacity {
   0% {
-  opacity: 1
+    opacity: 1;
   }
-  50%{
-    opacity: 1
+  50% {
+    opacity: 1;
   }
   100% {
-   opacity: 0
+    opacity: 0;
   }
 }

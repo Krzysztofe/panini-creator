@@ -2,6 +2,7 @@
   --clr-primary: rgba(0, 0, 0, 1);
   --clr-white: rgba(255, 255, 255, 1);
   --clr-transparent: rgba(255, 255, 255, 0);
+  --clr-background: rgb(251,251,251);
 
   --ff-primary: "Instrument Serif", serif;
   --ff-secondary: "Oxygen Mono", monospace;
@@ -13,7 +14,7 @@
   --fs-300: 0.75rem;
   --fs-400: 1.125rem;
   --fs-500: 1.625rem;
-  --fs-550: 2rem;
+  --fs-550: 2.25rem;
   --fs-600: 2.875rem;
 
   /* --fs-body: var(--fs-400);

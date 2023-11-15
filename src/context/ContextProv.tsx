@@ -1,4 +1,5 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 type Props = {
   children: React.ReactNode;
@@ -10,8 +11,13 @@ type ContextType = {
 
 export const Context = createContext<ContextType>({} as ContextType);
 
-const ContextProv = (props:Props) => {
+const ContextProv = (props: Props) => {
   const [isBegin, setBegin] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname !== "/") setBegin(false);
+  }, [pathname]);
 
   return (
     <Context.Provider
