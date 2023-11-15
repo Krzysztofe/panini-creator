@@ -11,9 +11,11 @@ const css = (isBegin: boolean) => {
   return {
     width: "100vw",
     height: "100vh",
-    position: "relative",
-    overflow: "hidden",
-    animation: isBegin ? `${styles.opacity} 3s forwards` : null,
+    backgroundColor: "var(--clr-white)",
+    position:"absolute",
+    top:0,
+    left:0,
+     animation: isBegin ? `${styles.opacity} 3s forwards` : null,
   };
 };
 
@@ -21,11 +23,11 @@ const IndexBegin = () => {
   const { isBegin } = useContext(Context);
 
   return (
-    <main>
-      {/* <IndexForm /> */}
+    <main className={styles.main}>
+      <IndexForm />
       <div style={css(isBegin)}>
         <BeginHeading />
-        {dataCircles.map(({ width, translate, keyFrames }, idx) => {
+        {dataCircles.map(({ width, translate, keyFrames }) => {
           return (
             <BeginCircle
               key={keyFrames.name}

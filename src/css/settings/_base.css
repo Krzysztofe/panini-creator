@@ -4,6 +4,7 @@ body {
   font-size: var(--fs-300);
   font-family: var(--ff-primary);
   color: var(--clr-primary);
+  /* overflow: hidden; */
   /* min-width: 100vw;
   min-height: 100vh; */
   /* font-synthesis: none;
@@ -12,6 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
 }
+
+ body::-webkit-scrollbar {
+    display: none;
+  }
 
 .wrapper {
   max-width: 640px;

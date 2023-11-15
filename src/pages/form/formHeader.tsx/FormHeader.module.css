@@ -1,5 +1,7 @@
 .header {
   background-color: var(--clr-background);
+  /* position: relative; */
+  /* z-index: -1; */
 }
 
 .header__container {
