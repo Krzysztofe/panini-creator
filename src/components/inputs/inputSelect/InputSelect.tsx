@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BottomArrow from "../../../img/BottomArrow";
+import ArrowBottom from "../../../img/ArrowBottom";
 import styles from "./InputSelect.module.css";
 
 type Props = {
@@ -21,7 +21,7 @@ const InputSelect = (props: Props) => {
           className={styles.arrow}
           style={isOpen ? { transform: "rotate(180deg)" } : null}
         >
-          <BottomArrow />
+          <ArrowBottom />
         </div>
       </div>
 

@@ -1,0 +1,18 @@
+.sliderContainer{
+    width: 250px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderArrow {
+    cursor: pointer;
+}
+
+.sliderCells{
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-secondary);
+    align-items: center;
+    
+}
