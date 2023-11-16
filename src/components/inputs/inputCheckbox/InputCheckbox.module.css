@@ -3,7 +3,7 @@
   display: block;
   width: fit-content;
   padding: 10px 20px;
-   background-color: var(--clr-background)
+  background-color: var(--clr-background);
 }
 
 .checkbox {
@@ -12,6 +12,6 @@
 
 .checkboxStyle {
   transition-duration: 320ms;
- 
   text-align: center;
+  font-size: var(--fs-300);
 }

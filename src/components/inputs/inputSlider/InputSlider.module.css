@@ -14,5 +14,5 @@
     justify-content: center;
     font-family: var(--ff-secondary);
     align-items: center;
-    
+    font-size: var(--fs-300);
 }

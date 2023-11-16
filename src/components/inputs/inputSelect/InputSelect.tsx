@@ -27,12 +27,11 @@ const InputSelect = (props: Props) => {
 
       {isOpen && (
         <>
-          {props.variants.slice(1).map((value, idx) => {
+          {props.variants.slice(1).map((value) => {
             return (
               <div
                 key={value}
-                className={styles.select}
-                style={{ borderTop: "0" }}
+                className={[styles.select, styles.selectDropdown].join(" ")}
                 onClick={() => {
                   // props.handleChange(props.inputName, value);
                   handleOpen();

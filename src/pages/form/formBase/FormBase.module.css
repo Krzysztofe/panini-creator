@@ -1,0 +1,8 @@
+.checkboxContainer{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
