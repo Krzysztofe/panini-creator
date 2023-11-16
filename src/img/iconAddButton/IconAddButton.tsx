@@ -1,7 +1,8 @@
-
+import style from "./IconAddButton.module.css"
 
 const IconAddButton = () => {
     return (
+      <div className={style.iconAddButton}>
       <svg
         width="17"
         height="17"
@@ -36,6 +37,7 @@ const IconAddButton = () => {
           />
         </g>
       </svg>
+      </div>
     );
 };
 

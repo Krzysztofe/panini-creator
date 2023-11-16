@@ -10,7 +10,11 @@ type Props = {
 const FormRow = (props: Props) => {
   return (
     <div className={styles.row}>
-      <h4 className={props.titleOnTop ? styles.rowHeading : null}>
+      <h4
+        className={
+          (props.titleOnTop ? styles.rowHeadingOnTop : null, styles.rowHeading)
+        }
+      >
         {props.title}
       </h4>
       {props.children}

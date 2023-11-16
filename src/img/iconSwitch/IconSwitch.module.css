@@ -1,0 +1,11 @@
+.iconSwitch{
+    position: absolute;
+    right: 0px;
+    top: 23px
+}
+
+@media (min-width: 550px){
+ .iconSwitch{
+    position: static;
+}
+}

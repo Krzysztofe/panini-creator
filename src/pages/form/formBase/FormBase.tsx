@@ -9,10 +9,10 @@ import { dressingVariants } from "../../../data/dressing";
 import { iconsBread } from "../../../data/iconsBread";
 import { meatVariants } from "../../../data/meat";
 import FormRow from "../formRow/FormRow";
-import IconAddButton from "../../../img/IconAddButton";
+import IconAddButton from "../../../img/iconAddButton/IconAddButton";
 import FormRowControls from "../formRowControls/FormRowControls";
-import IconSwitch from "../../../img/IconSwitch";
-import styles from "./FormBase.module.css"
+import IconSwitch from "../../../img/iconSwitch/IconSwitch";
+import styles from "./FormBase.module.css";
 
 const FormBase = () => {
   return (

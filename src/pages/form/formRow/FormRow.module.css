@@ -6,13 +6,27 @@
   border-bottom: 0.5px solid var(--clr-primary);
   padding-block: 20px;
   font-size: var(--fs-400);
+  position: relative;
 }
 
 .rowHeading {
+  position: absolute;
+  left: 0px;
+  top: 23px;
+}
+
+.rowHeadingOnTop {
   margin-top: 6px;
   margin-bottom: auto;
 }
 
-.controlsContainer {
-  display: flex;
+@media (min-width: 550px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rowHeading {
+    position: static;
+  }
 }

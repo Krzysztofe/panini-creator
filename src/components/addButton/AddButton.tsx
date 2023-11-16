@@ -1,4 +1,4 @@
-import IconAddButton from "../../img/IconAddButton";
+import IconAddButton from "../../img/iconAddButton/IconAddButton";
 
 const AddButton = () => {
   return (
