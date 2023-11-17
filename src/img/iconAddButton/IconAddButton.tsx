@@ -1,8 +1,21 @@
-import style from "./IconAddButton.module.css"
+import style from "./IconAddButton.module.css";
+import InputSlider from "../../components/inputs/inputSlider/InputSlider";
+import { useState } from "react";
 
 const IconAddButton = () => {
-    return (
-      <div className={style.iconAddButton}>
+  const [isInputPrint, setInputPrint] = useState([
+    <>
+    
+      <InputSlider variants={["ala", "ola"]} />,
+    </>,
+  ]);
+
+  const add = () => {
+    setInputPrint(prev=>[...prev, prev[0]])
+  };
+
+  return (
+    <div className={style.iconAddButton} onClick={add}>
       <svg
         width="17"
         height="17"
@@ -37,8 +50,9 @@ const IconAddButton = () => {
           />
         </g>
       </svg>
-      </div>
-    );
+      {isInputPrint}
+    </div>
+  );
 };
 
 export default IconAddButton;

@@ -4,9 +4,17 @@
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 19px;
+}
+
+@media (min-width: 400px) {
+  .header__container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .heading {

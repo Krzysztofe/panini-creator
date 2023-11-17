@@ -27,16 +27,10 @@ const IconDices = (props: Props) => {
       viewBox="0 0 15 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{
-        transition: "transform 0.3s ease",
-        transform: props.isHovered ? "scale(1.1)" : "scale(1)",
-      }}
     >
       <g id="Dices">
         <rect
           id="Rectangle 867"
-          //   x="0.306186"
-          //   y="10.0088"
           x={rec_1_Position_X}
           y={rec_1_Position_Y}
           width="6.69963"
@@ -64,14 +58,11 @@ const IconDices = (props: Props) => {
           cx={circle_1_position_X}
           cy={circle_1_position_Y}
           r="0.5"
-          //   cy="4.5"
           fill="black"
           style={{ transition: "all 0.3s ease" }}
         />
         <circle
           id="Ellipse 11"
-        //   cx="8.5"
-        //   cy="5.5"
           cx={circle_2_position_X}
           cy={circle_2_position_Y}
           r="0.5"
@@ -82,8 +73,6 @@ const IconDices = (props: Props) => {
           id="Ellipse 13"
           cx={circle_3_position_X}
           cy={circle_3_position_Y}
-          //   cx="4.5"
-          //   cy="12.5"
           r="0.5"
           fill="black"
           style={{ transition: "all 0.3s ease" }}

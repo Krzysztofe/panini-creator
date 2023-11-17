@@ -3,15 +3,12 @@
   height: 22px;
   display: flex;
   justify-content: space-between;
-   margin-top: calc(var(--size-300)*2.5);
   margin-left: auto;
 }
 
 @media (min-width: 550px) {
   .sliderContainer {
     width: 250px;
-    margin-top: 0;
-    margin-left: 0;
   }
 }
 
@@ -26,4 +23,3 @@
   align-items: center;
   font-size: var(--fs-300);
 }
-

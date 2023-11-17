@@ -1,14 +1,11 @@
 .selectContainer {
   width: 190px;
   height: 35px;
-  margin-top: calc(var(--size-300)*2.5);
 }
 
 @media (min-width: 550px) {
   .selectContainer {
     width: 250px;
-    margin-top: 0;
-    margin-left: 0;
   }
 }
 
