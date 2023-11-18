@@ -4,7 +4,7 @@ import FormBase from "../formBase/FormBase";
 import FormExtras from "../formExtras/FormExtras";
 import FormOrder from "../formOrder/FormOrder";
 import FormSection from "../formSection/FormSection";
-
+import FormSubmitButtons from "../formSubmitButtons/FormSubmitButtons";
 
 const IndexForm = () => {
   return (
@@ -23,6 +23,7 @@ const IndexForm = () => {
             <FormOrder />
           </FormSection>
         </div>
+        
       </form>
     </>
   );

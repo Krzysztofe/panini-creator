@@ -7,21 +7,24 @@ import { ContextForm } from "../../../context/ContextFormProv";
 import styles from "./FormOrder.module.css";
 import InputCheckboxWithLabel from "../../../components/inputs/inputCheckboxWithLabel/InputCheckboxWithLabel";
 import InputText from "../../../components/inputs/inputText/InputText";
+import FormSubmitButtons from "../formSubmitButtons/FormSubmitButtons";
 
 const FormOrder = () => {
   return (
     <>
       <FormRow>
         <FormRowTitle title={"name-panini"} switch={false} />
-        <FormRowInputs><InputText/></FormRowInputs>
+        <FormRowInputs>
+          <InputText />
+        </FormRowInputs>
       </FormRow>
 
       {[
-        { title: "napkins", variant: "add to order" },
         { title: "cutlery", variant: "add to order" },
+        { title: "napkins", variant: "add to order" },
       ].map(({ title, variant }) => {
         return (
-          <FormRow>
+          <FormRow key = {title}>
             <FormRowTitle title={title} switch={false} />
             <FormRowInputs>
               <div className={styles.radiosContainer}>
@@ -31,6 +34,9 @@ const FormOrder = () => {
           </FormRow>
         );
       })}
+    
+        <FormSubmitButtons />
+      
     </>
   );
 };
