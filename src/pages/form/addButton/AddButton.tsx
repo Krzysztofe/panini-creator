@@ -15,18 +15,21 @@ type Props = {
 const AddButton = (props: Props) => {
   const { newInputs, setNewInputs } = useContext(ContextForm);
 
+  const id = Date.now().toString();
   const newInput =
     props.inputType === "select" ? (
-      <li className={styles.newInput} id={Date.now().toString()}>
-        <DeleteButton name={props.name} id={Date.now().toString()} />
+      <li className={styles.newInput} id={id}>
+        <DeleteButton name={props.name} id={id} />
         <InputSelect variants={props.variants} />
       </li>
     ) : (
-      <li className={styles.newInput} id={Date.now().toString()}>
-        <DeleteButton name={props.name} id={Date.now().toString()} />
+      <li className={styles.newInput} id={id}>
+        <DeleteButton name={props.name} id={id} />
         <InputSlider variants={props.variants} />
       </li>
     );
+
+ 
 
   const handleAdd = () => {
     setNewInputs(prev => ({

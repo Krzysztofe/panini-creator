@@ -4,12 +4,15 @@ import ArrowRight from "../../../img/ArrowRight";
 import styles from "./InputSlider.module.css";
 
 type Props = {
+
   variants: string[];
   icons?: ReactNode[];
 };
 
 const InputSlider = (props: Props) => {
   const [counter, setCounter] = useState(0);
+
+
 
   const sliderLength = props.variants.length;
 

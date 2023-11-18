@@ -3,12 +3,13 @@
   height: 22px;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
+  margin-left: var(--size-300);
 }
 
 @media (min-width: 550px) {
   .sliderContainer {
     width: 250px;
+    margin-left: auto;
   }
 }
 

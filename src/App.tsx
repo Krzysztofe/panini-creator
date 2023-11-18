@@ -15,7 +15,9 @@ function App() {
             path="/"
             element={
               <ContextProv>
-                <IndexBegin />
+                <ContextFormProv>
+                  <IndexBegin />
+                </ContextFormProv>
               </ContextProv>
             }
           />
@@ -23,7 +25,6 @@ function App() {
             path="/form"
             element={
               <ContextFormProv>
-        
                 <IndexForm />
               </ContextFormProv>
             }
