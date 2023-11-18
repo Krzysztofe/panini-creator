@@ -4,6 +4,7 @@ import styles from "./IconSwitch.module.css";
 
 type Props = {
   name: string;
+  
 };
 
 const IconSwitch = (props: Props) => {

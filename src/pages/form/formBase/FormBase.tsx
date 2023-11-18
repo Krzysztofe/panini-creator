@@ -23,25 +23,77 @@ const FormBase = () => {
   // console.log("", isInputPrint);
 
   const dataFormRows = [
-    { value: "bread", variants: breadVariants },
-    { value: "chease", variants: cheeseVariants },
-    { value: "dressing", variants: dressingVariants },
+    { value: "bread", isSwitch: false, variants: breadVariants },
+    {
+      value: "chease",
+      isSwitch: true,
+      variants: cheeseVariants,
+      inputType: "select",
+    },
+    {
+      value: "meat",
+      isSwitch: true,
+      variants: meatVariants,
+      inputType: "select",
+    },
+    {
+      value: "dressing",
+      isSwitch: true,
+      variants: dressingVariants,
+      inputType: "slider",
+    },
+    {
+      value: "vegetable",
+      isSwitch: false,
+      variants: vegetableVariant,
+      inputType: "checkbox",
+    },
   ];
 
   return (
-    <> 
-      {dataFormRows.map(({ value, variants }, idx) => {
+    <>
+      {dataFormRows.map(({ value,isSwitch, variants, inputType }) => {
         return (
           <FormRow>
-            <FormRowTitle title={value}>
-              {idx > 0 && idx < 4 && <IconSwitch name={value} />}
-            </FormRowTitle>
+            <FormRowTitle title={value} switch={isSwitch} />
+
             <FormRowInputs>
               {value === "bread" && (
                 <InputSlider variants={variants} icons={iconsBread} />
               )}
-               {value === "dressing" && (
-                <InputSlider variants={variants} />
+
+              {isInputPrint[value as keyof typeof isInputPrint] && (
+                <>
+                  <ul className={styles.inpitsContainer}>
+                    <li className={styles.topInputContainer}>
+                      <AddButton
+                        name={value}
+                        variants={variants}
+                        inputType={inputType}
+                      />
+                      {inputType === "select" ? (
+                        <InputSelect variants={variants} />
+                      ) : (
+                        <InputSlider variants={variants} />
+                      )}
+                    </li>
+
+                    {newInputs[value as keyof typeof newInputs].map(
+                      (newInput, idx) => {
+                        return (
+                          <React.Fragment key={idx}>{newInput}</React.Fragment>
+                        );
+                      }
+                    )}
+                  </ul>
+                </>
+              )}
+              {value === "vegetable" && (
+                <div className={styles.checkboxContainer}>
+                  {vegetableVariant.map(vegetable => {
+                    return <InputCheckbox key={vegetable} value={vegetable} />;
+                  })}
+                </div>
               )}
             </FormRowInputs>
           </FormRow>
