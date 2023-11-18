@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+.radiosContainer {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
+  gap: 29px;
+}
+
 @media (min-width: 550px) {
   .topInputContainer {
     justify-content: space-between;

@@ -1,0 +1,10 @@
+.radioContainer{
+    display: flex;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-300);
+}
+
+.radioLabel{
+        margin-left: calc(var(--size-300)/3);
+
+}

@@ -10,6 +10,8 @@ import styles from "./FormExtras.module.css";
 import InputCheckbox from "../../../components/inputs/inputCheckbox/InputCheckbox";
 import InputCheckboxWithLabel from "../../../components/inputs/inputCheckboxWithLabel/InputCheckboxWithLabel";
 import { spreadVariant } from "../../../data/spread";
+import InputRadio from "../../../components/inputs/inputradio/InputRadio";
+import { servingVariant } from "../../../data/serving";
 
 const FormExtras = () => {
   const { isInputPrint, newInputs } = useContext(ContextForm);
@@ -52,6 +54,10 @@ const FormExtras = () => {
 
       <FormRow>
         <FormRowTitle title={"Serving"} switch={false} />
+        <div className={styles.radiosContainer}>{servingVariant.map((variant) => {
+        return<InputRadio name = {variant} />
+        })}</div>
+        
       </FormRow>
 
       <FormRow>
