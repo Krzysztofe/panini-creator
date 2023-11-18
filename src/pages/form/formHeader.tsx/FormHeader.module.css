@@ -1,16 +1,36 @@
 .header {
   background-color: var(--clr-background);
-  /* position: relative; */
-  /* z-index: -1; */
 }
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 19px;
 }
 
+@media (min-width: 400px) {
+  .header__container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
 .heading {
   font-size: var(--fs-550);
+}
+
+.button {
+  height: fit-content;
+  display: flex;
+  gap: 6px;
+  padding: 14px 20px;
+  background-color: var(--clr-white);
+  border: 0.5px solid var(--clr-transparent);
+  transition: 1s;
+}
+
+.button:hover {
+  border: 0.5px solid var(--clr-primary);
 }

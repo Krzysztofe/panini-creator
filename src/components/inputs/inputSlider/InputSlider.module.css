@@ -1,0 +1,26 @@
+.sliderContainer {
+  width: 190px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: var(--size-300);
+}
+
+@media (min-width: 550px) {
+  .sliderContainer {
+    width: 250px;
+    margin-left: auto;
+  }
+}
+
+.sliderArrow {
+  cursor: pointer;
+}
+
+.sliderCells {
+  display: flex;
+  justify-content: center;
+  font-family: var(--ff-secondary);
+  align-items: center;
+  font-size: var(--fs-300);
+}

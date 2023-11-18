@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContextProv from "./context/ContextProv";
+import ContextFormProv from "./context/ContextFormProv";
 const LoadingPage = lazy(() => import("./pages/loadingPage/LoadingPage"));
 const IndexBegin = lazy(() => import("./pages/begin/indexBegin/IndexBegin"));
 const IndexForm = lazy(() => import("./pages/form/indexForm/IndexForm"));
@@ -9,12 +10,26 @@ function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<LoadingPage />}>
-        <ContextProv>
-          <Routes>
-            <Route path="/" element={<IndexBegin />} />
-            <Route path="/form" element={<IndexForm />} />
-          </Routes>
-        </ContextProv>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ContextProv>
+                <ContextFormProv>
+                  <IndexBegin />
+                </ContextFormProv>
+              </ContextProv>
+            }
+          />
+          <Route
+            path="/form"
+            element={
+              <ContextFormProv>
+                <IndexForm />
+              </ContextFormProv>
+            }
+          />
+        </Routes>
       </Suspense>
     </BrowserRouter>
   );

@@ -35,7 +35,6 @@ const generateKeyframes = (data: KeyFrames) => {
   const { name, translateTo, scaleTo } = data;
   return `
     @keyframes ${name} {
-      0% {}
       100% {
         transform: translate(${translateTo}) scale(${scaleTo});
       }

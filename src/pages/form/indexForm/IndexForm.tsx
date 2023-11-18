@@ -5,12 +5,14 @@ import FormExtras from "../formExtras/FormExtras";
 import FormOrder from "../formOrder/FormOrder";
 import FormSection from "../formSection/FormSection";
 
+
 const IndexForm = () => {
   return (
     <>
       <FormHeader />
       <form className={` ${styles.form}`}>
         <div className="wrapper">
+      
           <FormSection heading="CONFIGURE BASE">
             <FormBase />
           </FormSection>

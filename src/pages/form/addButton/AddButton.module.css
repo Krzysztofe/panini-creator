@@ -1,0 +1,17 @@
+.newInput {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--size-300);
+  display: flex;
+  align-items: center;
+  position: relative;
+    margin-left: auto;
+}
+
+@media (min-width: 550px) {
+
+  .newInput {
+    justify-content: space-between;
+  }
+}

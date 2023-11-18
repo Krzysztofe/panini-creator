@@ -1,0 +1,16 @@
+.formRowConstrols {
+  display: flex;
+  align-items: center;
+  margin-top: calc(var(--size-300) * 2.5);
+  margin-left: auto;
+  margin-right: var(--size-300);
+}
+
+@media (min-width: 550px) {
+  .formRowConstrols {
+    display: flex;
+    margin-right: 60px;
+
+    margin-top: 0;
+  }
+}

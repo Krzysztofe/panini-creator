@@ -1,0 +1,38 @@
+.selectContainer {
+  width: 190px;
+  height: 35px;
+  margin-left: var(--size-300);
+}
+
+@media (min-width: 550px) {
+  .selectContainer {
+    width: 250px;
+  }
+}
+
+.select {
+  place-items: center;
+  display: grid;
+  position: relative;
+  height: 100%;
+  background-color: var(--clr-white);
+  cursor: pointer;
+  border: 0.5px solid var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-300);
+}
+
+.selectDropdown {
+  position: relative;
+  z-index: 2;
+  border-top: 0;
+}
+
+.arrow {
+  transform-origin: 8px 30%;
+  position: absolute;
+  top: 50%;
+  right: 13.79px;
+  transform: translatey(-50%);
+  transition-duration: 320ms;
+}

@@ -1,0 +1,11 @@
+.deleteButton {
+  /* position: absolute;
+  top: 8px;
+  left: calc(var(--size-300) * -1.1); */
+}
+
+@media (min-width: 550px){
+    .deleteButton{
+        left:0
+    }
+}
