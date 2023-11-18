@@ -47,7 +47,7 @@ const FormExtras = () => {
         <FormRowTitle title={"Spreads"} switch={false} />
         <div className={styles.checkboxesContainer}>
           {spreadVariant.map(item => {
-            return <InputCheckboxWithLabel name={item} />;
+            return <InputCheckboxWithLabel key = {item} name={item} />;
           })}
         </div>
       </FormRow>
@@ -55,7 +55,7 @@ const FormExtras = () => {
       <FormRow>
         <FormRowTitle title={"Serving"} switch={false} />
         <div className={styles.radiosContainer}>{servingVariant.map((variant) => {
-        return<InputRadio name = {variant} />
+        return<InputRadio key = {variant} name = {variant} />
         })}</div>
         
       </FormRow>
