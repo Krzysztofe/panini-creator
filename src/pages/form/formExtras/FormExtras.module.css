@@ -1,0 +1,23 @@
+.checkboxesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+}
+
+.inpitsContainer {
+  width: 100%;
+}
+.topInputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  .topInputContainer {
+    justify-content: space-between;
+  }
+}
