@@ -3,7 +3,6 @@ import { ContextForm } from "../../context/ContextFormProv";
 import styles from "./IconSwitch.module.css";
 
 type Props = {
-  id: string;
   name: string;
 };
 

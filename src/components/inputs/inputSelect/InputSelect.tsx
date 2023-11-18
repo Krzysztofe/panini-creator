@@ -4,10 +4,13 @@ import styles from "./InputSelect.module.css";
 
 type Props = {
   variants: string[];
+ 
 };
 
 const InputSelect = (props: Props) => {
   const [isOpen, setOpen] = useState(false);
+
+
 
   const handleOpen = () => {
     setOpen(state => !state);
@@ -27,15 +30,15 @@ const InputSelect = (props: Props) => {
 
       {isOpen && (
         <>
-          {props.variants.slice(1).map((value) => {
+          {props.variants.slice(1).map(value => {
             return (
               <div
                 key={value}
-                className={[styles.select, styles.selectDropdown].join(" ")}
                 onClick={() => {
                   // props.handleChange(props.inputName, value);
                   handleOpen();
                 }}
+                className={[styles.select, styles.selectDropdown].join(" ")}
               >
                 {value}
               </div>

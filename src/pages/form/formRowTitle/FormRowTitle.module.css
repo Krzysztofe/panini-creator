@@ -1,16 +1,20 @@
 .formRowTitle {
   width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0;
+  /* margin-bottom: auto; */
 }
 
 @media (min-width: 550px) {
-.formRowTitle {
-  width: 25%;
-}
+  .formRowTitle {
+    width: 25%;
+    margin-top: 4px;
+  }
 }
 
 .titleOnTop {
-  margin-bottom: auto;
+  /* margin-bottom: auto; */
 }

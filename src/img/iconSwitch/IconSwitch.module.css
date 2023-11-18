@@ -1,11 +1,10 @@
-.iconSwitch{
-    /* position: absolute;
-    right: 0px;
-    top: 23px */
+.iconSwitch {
+  /* margin-top: 3px; */
+  /* margin-bottom: auto; */
 }
 
-@media (min-width: 550px){
- .iconSwitch{
+@media (min-width: 550px) {
+  .iconSwitch {
     /* position: static; */
-}
+  }
 }

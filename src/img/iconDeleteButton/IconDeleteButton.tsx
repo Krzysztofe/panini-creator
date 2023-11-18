@@ -1,8 +1,7 @@
 
-const IconAddButton = () => {
-  
-  return (
 
+const IconDeleteButton = () => {
+    return (
       <svg
         width="17"
         height="17"
@@ -10,7 +9,7 @@ const IconAddButton = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g id="Add">
+        <g id="Substract">
           <rect
             id="Rectangle 870"
             x="0.25"
@@ -22,13 +21,6 @@ const IconAddButton = () => {
             strokeWidth="0.5"
           />
           <path
-            id="Line 34 (Stroke)"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M8.25 12.5L8.25 4.5L8.75 4.5L8.75 12.5L8.25 12.5Z"
-            fill="black"
-          />
-          <path
             id="Line 35 (Stroke)"
             fillRule="evenodd"
             clipRule="evenodd"
@@ -37,8 +29,7 @@ const IconAddButton = () => {
           />
         </g>
       </svg>
-    
-  );
+    );
 };
 
-export default IconAddButton;
+export default IconDeleteButton;

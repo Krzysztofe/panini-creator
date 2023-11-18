@@ -1,9 +1,25 @@
-.checkboxContainer{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    column-gap: 5px;
-    row-gap: 10px;
+.checkboxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 10px;
 }
 
+.inpitsContainer {
+  width: 100%;
+}
+.topInputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  .topInputContainer {
+    justify-content: space-between;
+  }
+
+}

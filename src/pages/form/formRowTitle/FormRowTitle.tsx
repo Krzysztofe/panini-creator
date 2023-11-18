@@ -3,7 +3,6 @@ import styles from "./FormRowTitle.module.css";
 type Props = {
   children?: ReactNode;
   title: string;
-  titleOnTop?: boolean;
 };
 
 const FormRowTitle = (props: Props) => {
@@ -11,10 +10,10 @@ const FormRowTitle = (props: Props) => {
     <div className={styles.formRowTitle}>
       <h4
         className={
-          (props.titleOnTop ? styles.titleOnTop : null)
+           styles.titleOnTop 
         }
       >
-        {props.title}
+        {props.title.toUpperCase()}
       </h4>
       {props.children}
     </div>
