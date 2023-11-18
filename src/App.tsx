@@ -10,26 +10,19 @@ function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<LoadingPage />}>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <ContextProv>
-                <ContextFormProv>
+        <ContextFormProv>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <ContextProv>
                   <IndexBegin />
-                </ContextFormProv>
-              </ContextProv>
-            }
-          />
-          <Route
-            path="/form"
-            element={
-              <ContextFormProv>
-                <IndexForm />
-              </ContextFormProv>
-            }
-          />
-        </Routes>
+                </ContextProv>
+              }
+            />
+            <Route path="/form" element={<IndexForm />} />
+          </Routes>
+        </ContextFormProv>
       </Suspense>
     </BrowserRouter>
   );

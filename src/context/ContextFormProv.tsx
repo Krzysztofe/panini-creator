@@ -8,24 +8,32 @@ type Props = {
   children: React.ReactNode;
 };
 type ContextType = {
-  isInputPrint: { chease: boolean; meat: boolean; dressing: boolean };
+  isInputPrint: {
+    chease: boolean;
+    meat: boolean;
+    dressing: boolean;
+    egg: boolean;
+  };
   setInputPrint: React.Dispatch<
     React.SetStateAction<{
       chease: boolean;
       meat: boolean;
       dressing: boolean;
+      egg: boolean;
     }>
   >;
   newInputs: {
     chease: JSX.Element[];
     meat: JSX.Element[];
     dressing: JSX.Element[];
+    egg: JSX.Element[];
   };
   setNewInputs: React.Dispatch<
     React.SetStateAction<{
       chease: JSX.Element[];
       meat: JSX.Element[];
       dressing: JSX.Element[];
+      egg: JSX.Element[];
     }>
   >;
 };
@@ -38,12 +46,14 @@ const ContextFormProv = (props: Props) => {
     chease: true,
     meat: true,
     dressing: true,
+    egg:true
   });
 
   const [newInputs, setNewInputs] = useState({
     chease: [] as JSX.Element[],
     meat: [] as JSX.Element[],
     dressing: [] as JSX.Element[],
+    egg: [] as JSX.Element[],
   });
 
   return (
