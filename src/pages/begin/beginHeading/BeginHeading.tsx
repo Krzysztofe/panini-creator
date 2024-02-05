@@ -15,7 +15,7 @@ const BeginHeading = () => {
         navigate("/form");
       }, 3000);
   };
-const yyy= "ppp"
+const xxx= "ppp"
 
   const handleBegin = () => {
     setBegin(true);
