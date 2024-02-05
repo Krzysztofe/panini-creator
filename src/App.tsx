@@ -6,6 +6,7 @@ const LoadingPage = lazy(() => import("./pages/loadingPage/LoadingPage"));
 const IndexBegin = lazy(() => import("./pages/begin/indexBegin/IndexBegin"));
 const IndexForm = lazy(() => import("./pages/form/indexForm/IndexForm"));
 
+const IndexSucces = lazy(() => import("./pages/success/IndexSucces"));
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,14 @@ function App() {
               }
             />
             <Route path="/form" element={<IndexForm />} />
+            <Route
+              path="/success"
+              element={
+                <ContextProv>
+                  <IndexSucces />
+                </ContextProv>
+              }
+            />
           </Routes>
         </ContextFormProv>
       </Suspense>

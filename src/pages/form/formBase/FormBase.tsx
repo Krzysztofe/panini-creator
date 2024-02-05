@@ -39,7 +39,9 @@ const FormBase = () => {
                       {inputType === "select" && (
                         <InputSelect variants={variants} />
                       )}
-                      {inputType==="slider"&&( <InputSlider variants={variants}/>)}
+                      {inputType === "slider" && (
+                        <InputSlider variants={variants} />
+                      )}
                     </li>
 
                     {newInputs[value as keyof typeof newInputs].map(

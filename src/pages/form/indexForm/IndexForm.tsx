@@ -1,10 +1,9 @@
-import FormHeader from "../formHeader.tsx/FormHeader";
-import styles from "./IndexForm.module.css";
 import FormBase from "../formBase/FormBase";
 import FormExtras from "../formExtras/FormExtras";
+import FormHeader from "../formHeader.tsx/FormHeader";
 import FormOrder from "../formOrder/FormOrder";
 import FormSection from "../formSection/FormSection";
-import FormSubmitButtons from "../formSubmitButtons/FormSubmitButtons";
+import styles from "./IndexForm.module.css";
 
 const IndexForm = () => {
   return (
@@ -12,7 +11,6 @@ const IndexForm = () => {
       <FormHeader />
       <form className={` ${styles.form}`}>
         <div className="wrapper">
-      
           <FormSection heading="CONFIGURE BASE">
             <FormBase />
           </FormSection>
@@ -23,7 +21,6 @@ const IndexForm = () => {
             <FormOrder />
           </FormSection>
         </div>
-        
       </form>
     </>
   );

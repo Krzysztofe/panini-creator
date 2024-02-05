@@ -1,13 +1,10 @@
-import React from "react";
-import InputRadio from "../../../components/inputs/inputradio/InputRadio";
-import FormRow from "../formRow/FormRow";
-import FormRowTitle from "../formRowTitle/FormRowTitle";
-import FormRowInputs from "../formRowInputs/FormRowInputs";
-import { ContextForm } from "../../../context/ContextFormProv";
-import styles from "./FormOrder.module.css";
 import InputCheckboxWithLabel from "../../../components/inputs/inputCheckboxWithLabel/InputCheckboxWithLabel";
 import InputText from "../../../components/inputs/inputText/InputText";
+import FormRow from "../formRow/FormRow";
+import FormRowInputs from "../formRowInputs/FormRowInputs";
+import FormRowTitle from "../formRowTitle/FormRowTitle";
 import FormSubmitButtons from "../formSubmitButtons/FormSubmitButtons";
+import styles from "./FormOrder.module.css";
 
 const FormOrder = () => {
   return (

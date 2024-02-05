@@ -7,6 +7,7 @@ import { Context } from "../../../context/ContextProv";
 import { dataCircles } from "./dataCircles";
 import IndexForm from "../../form/indexForm/IndexForm";
 
+
 const css = (isBegin: boolean) => {
   return {
     width: "100vw",
@@ -35,6 +36,7 @@ const IndexBegin = () => {
               translate={translate}
               keyFrames={keyFrames}
             >
+          
               {keyFrames.name === "center" ? <BeginHeadingContainer /> : <></>}
             </BeginCircle>
           );

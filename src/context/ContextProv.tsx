@@ -9,6 +9,16 @@ type ContextType = {
   setBegin: React.Dispatch<React.SetStateAction<boolean>>;
   isInputPrint: boolean;
   setInputPrint: React.Dispatch<React.SetStateAction<boolean>>;
+  beginHeader: {
+    header: string;
+    btn: string;
+  };
+  setBeginHeader: React.Dispatch<
+    React.SetStateAction<{
+      header: string;
+      btn: string;
+    }>
+  >;
 };
 
 export const Context = createContext<ContextType>({} as ContextType);
@@ -17,9 +27,22 @@ const ContextProv = (props: Props) => {
   const [isBegin, setBegin] = useState(false);
   const [isInputPrint, setInputPrint] = useState(false);
   const { pathname } = useLocation();
+  const [beginHeader, setBeginHeader] = useState({
+    header: "Panini Creator",
+    btn: "BEGIN",
+  });
 
   useEffect(() => {
     if (pathname !== "/") setBegin(false);
+    if (pathname === "/success") {
+      setBeginHeader({
+        ...beginHeader,
+        header: "Panini Ordered",
+        btn: "START AGAIN",
+      });
+    } else {
+      setBeginHeader({ ...beginHeader });
+    }
   }, [pathname]);
 
   return (
@@ -29,6 +52,8 @@ const ContextProv = (props: Props) => {
         setBegin,
         isInputPrint,
         setInputPrint,
+        beginHeader,
+        setBeginHeader,
       }}
     >
       {props.children}
