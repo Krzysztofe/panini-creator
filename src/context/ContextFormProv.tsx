@@ -1,8 +1,4 @@
 import React, { createContext, useState } from "react";
-import InputSelect from "../components/inputs/inputSelect/InputSelect";
-import { cheeseVariants } from "../data/cheese";
-import { meatVariants } from "../data/meat";
-import DeleteButton from "../pages/form/deleteButton/DeleteButton";
 
 type Props = {
   children: React.ReactNode;
