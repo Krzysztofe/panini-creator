@@ -17,9 +17,3 @@ React, TypeScript, CSS Modules
 1. Install dependencies with ``npm install``
 2. Run ``npm run dev`` to start developing
 
-### 📝 Project requirements
-
-- User should be able to configure sandwich order
-- User should be able submit order as JSON
-- Validation should be implemented
-- User should be able to randomize sandwich parameters
