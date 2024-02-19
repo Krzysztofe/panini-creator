@@ -4,7 +4,9 @@
 
 https://www.figma.com/file/s1qTZCN04CMNxA8z0tqKfI/Panini-Creator-x-Nerdbord?type=design&node-id=0-1&mode=design
 
-Master forms in React by creating sandwich configurator using React Hook Form, and Zod.
+Sandwich configurator created as part of the Nerdbord course based on the Figma project: <a href = "https://www.figma.com/file/s1qTZCN04CMNxA8z0tqKfI/Panini-Creator-x-Nerdbord?type=design&node-id=0-1&mode=design"> here --></a> 
+
+The project only includes styles intended for styling form inputs.
 
 ---
 
