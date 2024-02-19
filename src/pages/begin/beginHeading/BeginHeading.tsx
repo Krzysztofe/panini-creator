@@ -1,21 +1,28 @@
 import { useContext } from "react";
 import { Context } from "../../../context/ContextProv";
-import styles from "./BeginHeading.module.css";
 import { Link, useNavigate } from "react-router-dom";
+import styles from "./BeginHeading.module.css";
 
 const BeginHeading = () => {
   const { setBegin } = useContext(Context);
   const navigate = useNavigate();
   const { beginHeader } = useContext(Context);
 
-  const handleNavigate = () => {
+  // const handleNavigate = () => {
 
-    if (beginHeader.btn === "succes")
-      setTimeout(() => {
-        navigate("/form");
-      }, 3000);
+  //   console.log("", beginHeader.btn);
+  //   if (beginHeader.btn === "succes")
+  //     setTimeout(() => {
+  //       navigate("/form");
+  //     }, 3000);
+  // };
+
+  
+  const handleNavigate = () => {
+    setTimeout(() => {
+      navigate("/form");
+    }, 3000);
   };
-const xxx= "ppp"
 
   const handleBegin = () => {
     setBegin(true);
@@ -25,8 +32,10 @@ const xxx= "ppp"
     <div className={styles.headerWrapper}>
       <h1 className={styles.header}>{beginHeader.header}</h1>
       <button
-    
-        onClick={ handleNavigate}
+        onClick={() => {
+          handleNavigate();
+          handleBegin();
+        }}
         className={styles.button}
       >
         {beginHeader.btn}

@@ -2,14 +2,10 @@
   --clr-primary: rgba(0, 0, 0, 1);
   --clr-white: rgba(255, 255, 255, 1);
   --clr-transparent: rgba(255, 255, 255, 0);
-  --clr-background: rgb(251,251,251);
+  --clr-background: rgb(251, 251, 251);
 
   --ff-primary: "Instrument Serif", serif;
   --ff-secondary: "Oxygen Mono", monospace;
-
-  /* --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 700; */
 
   --fs-300: 0.75rem;
   --fs-400: 1.125rem;
@@ -17,24 +13,8 @@
   --fs-550: 2.25rem;
   --fs-600: 2.875rem;
 
-  /* --fs-body: var(--fs-400);
-  --fs-primary-heading: var(--fs-800);
-  --fs-secondary-heading: var(--fs-700);
-  --fs-nav: var(--fs-500);
-  --fs-btn: var(--fs-300); */
-
-  /* --size-100: 0.25rem;
-  --size-200: 0.5rem; */
   --size-300: 0.937rem;
-  /* --size-400: 1rem;
-  --size-500: 1.5rem;
-  --size-600: 2rem;
-  --size-700: 3rem;
-  --size-800: 4rem;
-  --size-900: 46px; */
-
-
-    --fs-primary-heading: var(--fs-500);
+  --fs-primary-heading: var(--fs-500);
 }
 
 @media (min-width: 50rem) {

@@ -30,6 +30,14 @@ function App() {
                 </ContextProv>
               }
             />
+            <Route
+              path="/*"
+              element={
+                <ContextProv>
+                  <IndexBegin />
+                </ContextProv>
+              }
+            />
           </Routes>
         </ContextFormProv>
       </Suspense>

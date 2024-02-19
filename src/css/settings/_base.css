@@ -4,14 +4,6 @@ body {
   font-size: var(--fs-300);
   font-family: var(--ff-primary);
   color: var(--clr-primary);
-  /* overflow: hidden; */
-  /* min-width: 100vw;
-  min-height: 100vh; */
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
 }
 
 body::-webkit-scrollbar {

@@ -1,4 +1,5 @@
 .row {
+  min-height: 76px;
   border-bottom: 0.5px solid var(--clr-primary);
   padding-block: 20px;
   font-size: var(--fs-400);

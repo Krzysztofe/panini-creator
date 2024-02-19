@@ -18,7 +18,8 @@
 
 .radiosContainer {
   display: flex;
-  align-items: end;
+  width: fit-content;
+  align-items: center;
   margin-left: auto;
   gap: 29px;
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from "./InputCheckboxWithLabel.module.css"
 
 type Props = {

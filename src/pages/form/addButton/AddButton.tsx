@@ -8,8 +8,8 @@ import InputSlider from "../../../components/inputs/inputSlider/InputSlider";
 
 type Props = {
   name: string;
-  variants: string[]
-  inputType: string
+  variants: string[];
+  inputType: string;
 };
 
 const AddButton = (props: Props) => {
@@ -23,13 +23,15 @@ const AddButton = (props: Props) => {
         <InputSelect variants={props.variants} />
       </li>
     ) : (
+      
       <li className={styles.newInput} id={id}>
         <DeleteButton name={props.name} id={id} />
-        <InputSlider variants={props.variants} />
+        <div>
+          <div className={styles.underline}></div>
+          <InputSlider variants={props.variants} />
+        </div>
       </li>
     );
-
- 
 
   const handleAdd = () => {
     setNewInputs(prev => ({

@@ -123,7 +123,27 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["node"],
+   
   },
   "include": ["src"]
 }
+
+// {
+//   "compilerOptions": {
+//     "module": "commonjs",
+//     "target": "es5",
+//     "jsx": "react",
+//     "esModuleInterop": true,
+//     "types": ["node"], // Add "node" if not present
+//     "typeRoots": ["node_modules/@types", "src/types"], // Add path to your type declarations if not present
+//     "allowJs": true, // Add if allowing JS files
+//     "resolveJsonModule": true, // Add if using JSON imports
+//     "baseUrl": ".", // Add if using paths
+//     "paths": {
+//       // Add path aliases if using paths
+//     }
+//   },
+//   "include": ["src"]
+// }
