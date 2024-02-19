@@ -9,7 +9,7 @@ course based on the <a href = "https://www.figma.com/file/s1qTZCN04CMNxA8z0tqKfI
 
 The project only includes styles intended for styling form inputs.
 
-React, TypeScript, CSS Modules
+React, TypeScript, CSS Modules, Vite
 ---
 
 ### How to start 🚀
