@@ -2,12 +2,11 @@
   Panini Creator 🥪
 </h1>
 
-https://www.figma.com/file/s1qTZCN04CMNxA8z0tqKfI/Panini-Creator-x-Nerdbord?type=design&node-id=0-1&mode=design
-
 Sandwich configurator created as part of the Nerdbord course based on the Figma project: <a href = "https://www.figma.com/file/s1qTZCN04CMNxA8z0tqKfI/Panini-Creator-x-Nerdbord?type=design&node-id=0-1&mode=design"> here --></a> 
 
 The project only includes styles intended for styling form inputs.
 
+React, TypeScript, CSS Modules
 ---
 
 ### How to start 🚀
