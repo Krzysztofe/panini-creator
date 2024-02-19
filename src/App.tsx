@@ -9,7 +9,7 @@ const IndexForm = lazy(() => import("./pages/form/indexForm/IndexForm"));
 const IndexSucces = lazy(() => import("./pages/success/IndexSucces"));
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/panini">
       <Suspense fallback={<LoadingPage />}>
         <ContextFormProv>
           <Routes>
